@@ -7,7 +7,15 @@ public class Observer : MonoBehaviour
     public Transform player;
     public GameEnding gameEnding;
 
+    private int enemyState;
     private bool m_IsPlayerInRange;
+
+    public enum state { patrol, chase, attack };
+
+    private void Start()
+    {
+        enemyState = (int)state.patrol;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -35,11 +43,23 @@ public class Observer : MonoBehaviour
 
             if (Physics.Raycast(ray, out raycastHit))
             {
-                if (raycastHit.collider.transform == player)
+                if (raycastHit.collider.transform == player && enemyState == (int)state.patrol)
                 {
-                    gameEnding.CaughtPlayer();
+                    //gameEnding.CaughtPlayer();
+                    enemyState = (int)state.chase;
+                    Debug.Log("Observer script found player");
                 }
             }
         }
+    }
+
+    public int GetState()
+    {
+        return enemyState;
+    }
+
+    public void SetState(int newState)
+    {
+        enemyState = newState;
     }
 }

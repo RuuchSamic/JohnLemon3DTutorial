@@ -222,8 +222,45 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[3]
       value: 
       objectReference: {fileID: 1253818926}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerLocation
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeScript
+      value: 
+      objectReference: {fileID: 811992203}
+    - target: {fileID: 7639813677045821161, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeObj
+      value: 
+      objectReference: {fileID: 811992203}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
+--- !u!114 &54769092 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6426429681613327482, guid: 88741b688b374994caf827eed57509bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1840547926}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0056de2534ab9248bf3a3ba4b09cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74014664
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,6 +385,18 @@ Transform:
   m_Father: {fileID: 1491506517}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &362548756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6426429681613327482, guid: 88741b688b374994caf827eed57509bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4113488393619961864}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0056de2534ab9248bf3a3ba4b09cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &469930621
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,6 +834,31 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1875415199}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerLocation
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeScript
+      value: 
+      objectReference: {fileID: 1188595882}
+    - target: {fileID: 7639813677045821161, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeObj
+      value: 
+      objectReference: {fileID: 1188595882}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!1 &705507993
@@ -1017,6 +1091,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7181272907624175691}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &811992203 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6426429681613327482, guid: 88741b688b374994caf827eed57509bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 18627341}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0056de2534ab9248bf3a3ba4b09cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817068741
 GameObject:
   m_ObjectHideFlags: 3
@@ -1444,6 +1530,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1188595882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6426429681613327482, guid: 88741b688b374994caf827eed57509bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 696461707}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0056de2534ab9248bf3a3ba4b09cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1253818925
 GameObject:
   m_ObjectHideFlags: 0
@@ -5192,6 +5290,31 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 862104984}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerLocation
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeScript
+      value: 
+      objectReference: {fileID: 54769092}
+    - target: {fileID: 7639813677045821161, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeObj
+      value: 
+      objectReference: {fileID: 54769092}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!1 &1868034692
@@ -5530,6 +5653,36 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 227649817}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerLocation
+      value: 
+      objectReference: {fileID: 740278706}
+    - target: {fileID: 6611656329699537879, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeScript
+      value: 
+      objectReference: {fileID: 362548756}
+    - target: {fileID: 7639813677045821161, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8557479500386371330, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: observeObj
+      value: 
+      objectReference: {fileID: 362548756}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 740278706}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!1001 &6452360035890940030
