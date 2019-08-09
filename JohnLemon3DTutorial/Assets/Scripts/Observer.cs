@@ -47,7 +47,6 @@ public class Observer : MonoBehaviour
                 {
                     //gameEnding.CaughtPlayer();
                     enemyState = (int)state.chase;
-                    Debug.Log("Observer script found player");
                 }
             }
         }

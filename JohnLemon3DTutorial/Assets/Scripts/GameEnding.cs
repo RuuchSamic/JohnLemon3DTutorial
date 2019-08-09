@@ -43,7 +43,7 @@ public class GameEnding : MonoBehaviour
         }
     }
 
-    void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
+    private void EndLevel(CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
     {
         if (!m_HasAudioPlayed)
         {

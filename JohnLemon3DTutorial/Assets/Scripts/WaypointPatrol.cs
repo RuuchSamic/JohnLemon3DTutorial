@@ -33,7 +33,6 @@ public class WaypointPatrol : MonoBehaviour
         }
         else if (npcState == 1)
         {
-            Debug.Log("WaypointPatrol script chase player");
             navMeshAgent.isStopped = false;
             navMeshAgent.SetDestination(playerLocation.position);
         }

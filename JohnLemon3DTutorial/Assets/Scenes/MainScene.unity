@@ -247,6 +247,11 @@ PrefabInstance:
       propertyPath: observeObj
       value: 
       objectReference: {fileID: 811992203}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 740278709}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!114 &54769092 stripped
@@ -859,6 +864,11 @@ PrefabInstance:
       propertyPath: observeObj
       value: 
       objectReference: {fileID: 1188595882}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 740278709}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!1 &705507993
@@ -1091,6 +1101,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7181272907624175691}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &740278709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -6941412363299910730, guid: 66ab88d28cb8eaa46a50a1915af0c709,
+    type: 3}
+  m_PrefabInstance: {fileID: 7181272907624175691}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740278701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bbd1c657756dea41a1b1c26f6192566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &811992203 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6426429681613327482, guid: 88741b688b374994caf827eed57509bb,
@@ -5315,6 +5337,11 @@ PrefabInstance:
       propertyPath: observeObj
       value: 
       objectReference: {fileID: 54769092}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 740278709}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!1 &1868034692
@@ -5683,6 +5710,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 740278706}
+    - target: {fileID: 8282582499371962713, guid: 88741b688b374994caf827eed57509bb,
+        type: 3}
+      propertyPath: playerStats
+      value: 
+      objectReference: {fileID: 740278709}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88741b688b374994caf827eed57509bb, type: 3}
 --- !u!1001 &6452360035890940030

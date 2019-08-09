@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class attackScript : MonoBehaviour
 {
-
-    public Transform player;
     public Observer observeObj;
+    public Transform player;
+    public PlayerStats playerStats;
 
-    private bool m_IsPlayerInAttackRange;
+    private int damage = 20;
+    private float prevAtkTime = 0;
+    private float timeToNextAttack = 3.0f;
+    private bool m_IsPlayerInAttackRange = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -33,6 +36,11 @@ public class attackScript : MonoBehaviour
         {
             //2 is attack state
             observeObj.SetState(2);
+            if (Time.time - prevAtkTime > timeToNextAttack)
+            {
+                playerStats.damagePlayer(damage);
+                prevAtkTime = Time.time;
+            }
         }
         else
         {
