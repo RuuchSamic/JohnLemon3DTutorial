@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     public GameEnding gameOver;
+    public StopWatch healOverTime;
 
     private const int playerMaxHealth = 100;
 
@@ -12,6 +13,7 @@ public class PlayerStats : MonoBehaviour
     private int healPts = 5;
     private float prevHeal = 0;
     private float timeUntilNextRegen = 5.0f;
+
 
     // Update is called once per frame
     void Update()
@@ -21,7 +23,7 @@ public class PlayerStats : MonoBehaviour
             gameOver.CaughtPlayer();
         }
 
-        if (playerHealth < playerMaxHealth && Time.time - prevHeal > timeUntilNextRegen)
+        if (playerHealth < playerMaxHealth && healOverTime.repeatTime(timeUntilNextRegen))
         {
             healthRegen();
         }
@@ -30,7 +32,7 @@ public class PlayerStats : MonoBehaviour
     private void healthRegen()
     {
         playerHealth += healPts;
-        prevHeal = Time.time;
+        //prevHeal = Time.time;
 
         if (playerHealth > playerMaxHealth)
         {

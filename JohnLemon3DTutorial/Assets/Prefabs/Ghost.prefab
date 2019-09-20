@@ -622,7 +622,6 @@ MonoBehaviour:
   waypoints: []
   playerLocation: {fileID: 0}
   observeScript: {fileID: 0}
-  npcState: 0
 --- !u!82 &4346886864624864098
 AudioSource:
   m_ObjectHideFlags: 0
@@ -948,6 +947,7 @@ GameObject:
   - component: {fileID: 6936435373310756630}
   - component: {fileID: 5993584178368762967}
   - component: {fileID: 8282582499371962713}
+  - component: {fileID: 4342248335160364299}
   m_Layer: 0
   m_Name: AttackRange
   m_TagString: Untagged
@@ -994,8 +994,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d379999fdb72c1248bcd79ccd3d6127a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   observeObj: {fileID: 0}
+  player: {fileID: 0}
+  playerStats: {fileID: 0}
+  attackInterval: {fileID: 0}
+--- !u!114 &4342248335160364299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5914385169623586024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05e98e8e626918448eb16061606c1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3306391473759227711
 PrefabInstance:
   m_ObjectHideFlags: 0

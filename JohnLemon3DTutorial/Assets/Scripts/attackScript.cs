@@ -7,9 +7,9 @@ public class attackScript : MonoBehaviour
     public Observer observeObj;
     public Transform player;
     public PlayerStats playerStats;
+    public StopWatch attackInterval;
 
     private int damage = 20;
-    private float prevAtkTime = 0;
     private float timeToNextAttack = 3.0f;
     private bool m_IsPlayerInAttackRange = false;
 
@@ -36,10 +36,9 @@ public class attackScript : MonoBehaviour
         {
             //2 is attack state
             observeObj.SetState(2);
-            if (Time.time - prevAtkTime > timeToNextAttack)
+            if (attackInterval.repeatTime(timeToNextAttack))
             {
                 playerStats.damagePlayer(damage);
-                prevAtkTime = Time.time;
             }
         }
         else
